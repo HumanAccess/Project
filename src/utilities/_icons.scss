@@ -1,0 +1,48 @@
+// Icons
+
+// Import SVG icons file
+@import "svg";
+
+// SVG mask style extend
+%svg-mask {
+--v-align: -.125em;
+--color: var(--text);
+--display: inline-block;
+  display: var(--display);
+  background-color: var(--color);
+  content: "";
+  width: var(--fs);
+  height: var(--fs);
+  vertical-align: var(--v-align);
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+}
+
+// Class utility styles
+.ico-a:after, .ico-b:before, 
+.ico-block-a:after, .ico-block-b:before {
+  @extend %svg-mask;
+}
+
+.ico-a:after { margin-left: .25rem; }
+.ico-b:before { margin-right: .25rem; }
+
+.ico-block-a:after, .ico-block-b:before {
+  --display: block;
+  margin-inline: auto;
+}
+
+// Class utility icons
+
+.css3 {
+--svg: var(--css3);
+}
+
+[aria-label="Top of page"] {
+--svg: var(--pageup);
+}
+
+.github {
+--svg: var(--github);
+}
+

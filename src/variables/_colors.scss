@@ -1,0 +1,45 @@
+// Color variable properties
+
+:where(html) {
+  --h: 0;
+  --s: 0%;
+  --l: 0%;  
+  --black-hsl: 0, 0%, 0%;
+  --white-hsl: 0, 0%, 100%;
+  --gray-1: hsl(0, 0%, 99%);
+  --gray-2: hsl(0, 0%, 97%);
+  --gray-3: hsl(0, 0%, 90%);
+  --gray-4: hsl(0, 0%, 85%);
+  --gray-5: hsl(0, 0%, 73%);
+  --gray-6: hsl(0, 0%, 57%);
+  --gray-7: hsl(0, 0%, 45%);
+  --gray-8: hsl(0, 0%, 36%);
+  --gray-9: hsl(0, 0%, 25%);
+  --gray-10: hsl(0, 0%, 15%);
+  --gray-11: hsl(0, 0%, 11%);
+  --gray-12: hsl(0, 0%, 3%);
+}
+
+:where(html) {
+  --blue-h: 240;
+  --blue-s: 45%;
+  --blue-l: 50%;
+  --blue-hsl: 240, 45%, 50%;
+  --blue: hsl(var(--blue-hsl));   
+  --red-h: 0;
+  --red-s: 100%;
+  --red-l: 35%;
+  --red-hsl: 0, 100%, 35%;
+  --red: hsl(var(--red-hsl));    
+  --green-h: 120;
+  --green-s: 50%;
+  --green-l: 30%;
+  --green-hsl: 120, 50%, 30%;
+  --green: hsl(var(--green-hsl));    
+  --yellow-h: 60;
+  --yellow-s: 100%;
+  --yellow-l: 57%;
+  --yellow-hsl: 60, 100%, 57%;
+  --yellow: hsl(var(--yellow-hsl));
+}
+

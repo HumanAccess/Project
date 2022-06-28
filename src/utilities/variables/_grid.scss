@@ -1,0 +1,167 @@
+// Grid variables
+
+// Auto width sizes
+$ga-1: auto;
+$ga-2: repeat(2, auto);
+$ga-3: repeat(3, auto);
+$ga-4: repeat(4, auto);
+$ga-5: repeat(5, auto);
+$ga-6: repeat(6, auto);
+$ga-7: repeat(7, auto);
+$ga-8: repeat(8, auto);
+$ga-9: repeat(9, auto);
+$ga-10: repeat(10, auto);
+$ga-11: repeat(11, auto);
+$ga-12: repeat(12, auto);
+
+// Auto width grid utilities map
+// Increase grid columns up to 12 by adding column widths here
+$autogrid: (
+  "ga-1": $ga-1,
+  "ga-2": $ga-2,
+  "ga-3": $ga-3,
+  "ga-4": $ga-4,
+) !default;
+
+// Auto width grid variables map
+$autogrid-variables: (
+  "ga-1": $ga-1,
+  "ga-2": $ga-2,
+  "ga-3": $ga-3,
+  "ga-4": $ga-4,
+  "ga-5": $ga-5,
+  "ga-6": $ga-6,
+  "ga-7": $ga-7,
+  "ga-8": $ga-8,
+  "ga-9": $ga-9,
+  "ga-10": $ga-10,
+  "ga-11": $ga-11,
+  "ga-12": $ga-12,
+) !default;
+
+// Fraction width sizes
+$gf-1: 100%;
+$gf-2: repeat(2, 1fr);
+$gf-3: repeat(3, 1fr);
+$gf-4: repeat(4, 1fr);
+$gf-5: repeat(5, 1fr);
+$gf-6: repeat(6, 1fr);
+$gf-7: repeat(7, 1fr);
+$gf-8: repeat(8, 1fr);
+$gf-9: repeat(9, 1fr);
+$gf-10: repeat(10, 1fr);
+$gf-11: repeat(11, 1fr);
+$gf-12: repeat(12, 1fr);
+
+// Fraction width grid utilities map
+// Increase grid columns up to 12 by adding column widths here
+$fraction-grid: (
+  "gf-1": $gf-1,
+  "gf-2": $gf-2,
+  "gf-3": $gf-3,
+  "gf-4": $gf-4,
+) !default;
+
+// Fraction width grid variables map
+$fraction-grid-variables: (
+  "gf-1": $gf-1,
+  "gf-2": $gf-2,
+  "gf-3": $gf-3,
+  "gf-4": $gf-4,
+  "gf-5": $gf-5,
+  "gf-6": $gf-6,
+  "gf-7": $gf-7,
+  "gf-8": $gf-8,
+  "gf-9": $gf-9,
+  "gf-10": $gf-10,
+  "gf-11": $gf-11,
+  "gf-12": $gf-12,
+) !default;
+
+// Gaps
+$gap-0: 0 !default;
+$gap-1: .25rem !default;
+$gap-2: .5rem !default;
+$gap-3: 1rem !default;
+$gap-4: 1.5rem !default;
+$gap-5: 2rem !default;
+
+// Gap utilties map
+$gaps: (
+  "gap-0": $gap-0,
+  "gap-1": $gap-1,
+  "gap-2": $gap-2,
+  "gap-3": $gap-3,
+  "gap-4": $gap-4,
+  "gap-5": $gap-5,
+) !default;
+
+// Column gaps
+$gap-c-0: 0 !default;
+$gap-c-1: .25rem !default;
+$gap-c-2: .5rem !default;
+$gap-c-3: 1rem !default;
+$gap-c-4: 1.5rem !default;
+$gap-c-5: 2rem !default;
+
+// Column gaps utilities map
+$gap-column: (
+  "gap-c-0": $gap-c-0,
+  "gap-c-1": $gap-c-1,
+  "gap-c-2": $gap-c-2,
+  "gap-c-3": $gap-c-3,
+  "gap-c-4": $gap-c-4,
+  "gap-c-5": $gap-c-5,
+) !default;
+
+// Row gaps
+$gap-r-0: 0 !default;
+$gap-r-1: .25rem !default;
+$gap-r-2: .5rem !default;
+$gap-r-3: 1rem !default;
+$gap-r-4: 1.5rem !default;
+$gap-r-5: 2rem !default;
+
+// Row gaps utilities map
+$gap-row: (
+  "gap-r-0": $gap-r-0,
+  "gap-r-1": $gap-r-1,
+  "gap-r-2": $gap-r-2,
+  "gap-r-3": $gap-r-3,
+  "gap-r-4": $gap-r-4,
+  "gap-r-5": $gap-r-5,
+) !default;
+
+// Order
+$order-0: 0 !default;
+$order-1: 1 !default;
+$order-2: 2 !default;
+$order-3: 3 !default;
+$order-4: 4 !default;
+$order-5: 5 !default;
+
+// Order utilities map
+$order: (
+  "order-0": $order-0,
+  "order-1": $order-1,
+  "order-2": $order-2,
+  "order-3": $order-3,
+  "order-4": $order-4,
+  "order-5": $order-5,
+) !default;
+
+// Breakpoints
+$bp576: 576px !default;
+$bp768: 768px !default;
+$bp992: 992px !default;
+$bp1200: 1200px !default;
+$bp1400: 1400px !default;
+
+// Breakpoints utilities map
+$breakpoints: (
+  "sm": $bp576,
+  "md": $bp768,
+  "lg": $bp992,
+  "xl": $bp1200,
+  "xxl": $bp1400,
+) !default;

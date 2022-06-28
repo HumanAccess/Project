@@ -1,0 +1,19 @@
+
+:where(html) {
+--gradient-1: linear-gradient(180deg, hsla(var(--white-hsl), .075), hsla(var(--white-hsl), 0));
+--gradient-2: linear-gradient(180deg, hsla(var(--white-hsl), .2), hsla(var(--white-hsl), 0));
+--gradient-3: linear-gradient(180deg, hsla(var(--white-hsl), .3), hsla(var(--white-hsl), 0));
+--gradient-4: linear-gradient(180deg, hsla(var(--white-hsl), .4), hsla(var(--white-hsl), 0));
+--gradient-5: linear-gradient(180deg, hsla(var(--white-hsl), .5), hsla(var(--white-hsl), 0));
+--gradient-6: linear-gradient(180deg, hsla(var(--white-hsl), .6), hsla(var(--white-hsl), 0));
+
+--box-shadow-1: 0 0.125rem 0.25rem hsla(var(--black-hsl), 0.075);
+--box-shadow-2: 0 0.063rem 0.125rem hsla(var(--black-hsl), 0.4);
+--box-shadow-3: 0 0.156rem 0.25rem hsla(var(--black-hsl), 0.4);
+--box-shadow-4: 0 0.172rem 0.35rem hsla(var(--black-hsl), 0.35);
+
+--txt-shadow-1: 0.03rem 0.05rem 0.094rem hsla(var(--black-hsl), 0.5);
+--txt-shadow-2: 0.03rem 0.08rem 0.094rem hsla(var(--black-hsl), 0.5);
+--txt-shadow-3: 0.03rem 0.15rem 0.094rem hsla(var(--black-hsl), 0.5);
+--txt-shadow-4: 0.03rem 0.2rem 0.094rem hsla(var(--black-hsl), 0.5);
+}

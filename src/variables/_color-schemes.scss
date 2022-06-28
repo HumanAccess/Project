@@ -1,0 +1,136 @@
+// Color schemes Sass and CSS variables
+
+// Each color scheme requires duplication to work with JS manual
+// switching and @media prefers options. The properties are managed
+// using Sass variables to save replicating alterations made.
+
+// Links
+$link-lighter: 240, 45%, 75%;
+$link-light: 240, 45%, 68%;
+$link-dark: 240, 45%, 50%;
+
+// Mode switching button graphic
+$day-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z' clip-rule='evenodd'/></svg>");
+$night-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z' clip-rule='evenodd'/></svg>");
+
+// Light mode color scheme
+$lm-color-scheme: light;
+$lm-text: #000;
+$lm-text-hsl: 0, 0%, 0%;
+$lm-text-light: var(--gray-9);
+$lm-link: var(--link-dark);
+$lm-link-hover: var(--link-lighter);
+$lm-surf-1: #fff;
+$lm-surf-2: var(--gray-1);
+$lm-surf-3: var(--gray-2);
+$lm-surf-4: var(--gray-3);
+$lm-surf-5: var(--gray-4);
+$lm-surf-6: var(--gray-5);
+$lm-surf-7: var(--gray-6);
+$lm-body-bg: var(--surf-1);
+$lm-modeswitch-svg: var(--day-mode);
+
+// Dark mode color scheme
+$dm-color-scheme: dark;
+$dm-text: #fff;
+$dm-text-hsl: 0, 0%, 100%;
+$dm-text-light: var(--gray-2);
+$dm-link: var(--link-light);
+$dm-link-hover: var(--link-lighter);
+$dm-surf-1: #000;
+$dm-surf-2: var(--gray-12);
+$dm-surf-3: var(--gray-11);
+$dm-surf-4: var(--gray-10);
+$dm-surf-5: var(--gray-9);
+$dm-surf-6: var(--gray-8);
+$dm-surf-7: var(--gray-7);
+$dm-body-bg: var(--surf-1);
+$dm-modeswitch-svg: var(--night-mode);
+
+
+:root {
+  color-scheme: light dark;
+}
+
+:where(html) {
+  --link-lighter: hsl(#{$link-lighter});
+  --link-light: hsl(#{$link-light});
+  --link-dark: hsl(#{$link-dark});
+  --day-mode: #{$day-mode};
+  --night-mode: #{$night-mode};
+}
+
+:where(html) {
+  color-scheme: #{$lm-color-scheme};
+  --text: #{$lm-text};
+  --text-hsl: #{$lm-text-hsl};
+  --text-light: #{$lm-text-light};
+  --link: #{$lm-link};
+  --link-hover: #{$lm-link-hover};
+  --surf-1: #{$lm-surf-1};
+  --surf-2: #{$lm-surf-2};
+  --surf-3: #{$lm-surf-3};
+  --surf-4: #{$lm-surf-4};
+  --surf-5: #{$lm-surf-5};
+  --surf-6: #{$lm-surf-6};
+  --surf-7: #{$lm-surf-7};
+  --body-bg: #{$lm-body-bg};
+  --modeswitch-svg: #{$lm-modeswitch-svg};
+}
+
+:where(body.dark-theme) {
+  color-scheme: #{$dm-color-scheme};
+  --text: #{$dm-text};
+  --text-hsl: #{$dm-text-hsl};
+  --text-light: #{$dm-text-light};
+  --link: #{$dm-link};
+  --link-hover: #{$dm-link-hover};
+  --surf-1: #{$dm-surf-1};
+  --surf-2: #{$dm-surf-2};
+  --surf-3: #{$dm-surf-3};
+  --surf-4: #{$dm-surf-4};
+  --surf-5: #{$dm-surf-5};
+  --surf-6: #{$dm-surf-6};
+  --surf-7: #{$dm-surf-7};
+  --body-bg: #{$dm-body-bg};
+  --modeswitch-svg: #{$dm-modeswitch-svg};
+}
+
+@media (prefers-color-scheme: dark) {
+:where(html) {
+  color-scheme: #{$dm-color-scheme};
+  --text: #{$dm-text};
+  --text-hsl: #{$dm-text-hsl};
+  --text-light: #{$dm-text-light};
+  --link: #{$dm-link};
+  --link-hover: #{$dm-link-hover};
+  --surf-1: #{$dm-surf-1};
+  --surf-2: #{$dm-surf-2};
+  --surf-3: #{$dm-surf-3};
+  --surf-4: #{$dm-surf-4};
+  --surf-5: #{$dm-surf-5};
+  --surf-6: #{$dm-surf-6};
+  --surf-7: #{$dm-surf-7};
+  --body-bg: #{$dm-body-bg};
+  --modeswitch-svg: #{$dm-modeswitch-svg};
+}
+}
+@media (prefers-color-scheme: dark) { 
+:where(html) body.light-theme {
+  color-scheme: #{$lm-color-scheme};
+  --text: #{$lm-text};
+  --text-hsl: #{$lm-text-hsl};
+  --text-light: #{$lm-text-light};
+  --link: #{$lm-link};
+  --link-hover: #{$lm-link-hover};
+  --surf-1: #{$lm-surf-1};
+  --surf-2: #{$lm-surf-2};
+  --surf-3: #{$lm-surf-3};
+  --surf-4: #{$lm-surf-4};
+  --surf-5: #{$lm-surf-5};
+  --surf-6: #{$lm-surf-6};
+  --surf-7: #{$lm-surf-7};
+  --body-bg: #{$lm-body-bg};
+  --modeswitch-svg: #{$lm-modeswitch-svg};
+}
+}

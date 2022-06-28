@@ -1,0 +1,6 @@
+/site/
+/src/_theme.scss
+/src/utilities/_syntax.scss
+*.ppr
+.hugo_build.lock
+desktop.ini

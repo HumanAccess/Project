@@ -1,0 +1,148 @@
+// Buttons
+
+:where(button, [type="button"], [type="submit"], [type="reset"], [role="button"], .btn),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  --btn-color: inherit;
+  --btn-bg: inherit;
+  --btn-padding: .25rem .5rem;
+  --btn-border: transparent;
+  --btn-radius: 2px;
+  --btn-focus: 0 0 0 0.18rem hsla(var(--btn-focus-hsl), .5);
+  --btn-display: ;
+  --btn-width: ;
+  color: var(--btn-color);
+  padding: var(--btn-padding);
+  border: 1px solid var(--btn-border);
+  border-radius: var(--btn-radius);
+  background-color: var(--btn-bg);
+  display: var(--btn-display);
+  width: var(--btn-width);
+  cursor: pointer;
+  -webkit-appearance: button; 
+  appearance: button;
+  transition: border-color 0.1s, background-color 0.1s;
+}
+
+:where([role="button"], .btn) {
+--btn-display: inline-block;
+  text-decoration: none;
+}
+
+:where(.btn) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+:where(button, [type="button"], [type="submit"], [type="reset"], [role="button"], .btn):hover {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+}
+
+:where(button, [type="button"], [type="submit"], [type="reset"], [role="button"], .btn):focus,
+:where(button, [type="button"], [type="submit"], [type="reset"], [role="button"], .btn):active, {
+  color: var(--btn-focus-color);
+  outline: 0;
+  background-color: var(--btn-focus-bg);
+  border: 1px solid var(--btn-border);
+  box-shadow: var(--btn-focus);
+}
+
+// Combining the file upload button hover properties causes all the hover
+// and focus styles stop working on Firefox for some reason so I've 
+// seperated them and repeated the properties to keep them working. 
+
+:where(input[type="file"])::file-selector-button:hover {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+  padding: .25rem .5rem;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button:hover {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+}
+
+// The file upload content box seems to require a wrapper to contain the width 
+// otherwise it causes horizontal scrolling at smaller viewing sizes.
+
+:where([type=file]) {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--surf-4);
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  margin-right: .5rem;
+  border-radius: 0;
+}
+
+:where(button, [type="button"], [role="button"], .btn) {
+  --btn-bg: var(--surf-2);
+  --btn-border: var(--surf-4);
+  --btn-hover-bg: var(--surf-3);
+  --btn-focus-bg: var(--surf-1);
+  --btn-focus-hsl: var(--text-hsl);
+}
+
+:where(.btn-dark),
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  --btn-color: #fff;
+  --btn-bg: var(--gray-11);
+  --btn-border: var(--gray-12);
+  --btn-hover-color: var(--btn-color);
+  --btn-hover-bg: var(--gray-9);
+  --btn-focus-color: var(--btn-color);
+  --btn-focus-bg: #000;
+  --btn-focus-hsl: var(--text-hsl);
+}
+
+
+:where([type="reset"]), :where(.btn-red) {
+  --btn-color: #fff;
+  --btn-bg: var(--red);
+  --btn-border: hsl(var(--red-h), var(--red-s), 40%);
+  --btn-hover-color: #fff;
+  --btn-hover-bg: hsl(var(--red-h), var(--red-s), 42%);
+  --btn-focus-color: var(--btn-color);
+  --btn-focus-bg: var(--red);
+  --btn-focus-hsl: var(--red-hsl);
+}
+
+:where([type="submit"]), :where(.btn-blue) {
+  --btn-color: #fff;
+  --btn-bg: var(--blue);
+  --btn-border: hsl(var(--blue-h), var(--blue-s), 40%);
+  --btn-hover-color: var(--btn-color);
+  --btn-hover-bg: hsl(var(--blue-h), var(--blue-s), 35%);
+  --btn-focus-color: var(--btn-color);
+  --btn-focus-bg: var(--blue);
+  --btn-focus-hsl: var(--blue-hsl);
+}
+
+:where(.btn-green) {
+  --btn-color: #fff;
+  --btn-bg: var(--green);
+  --btn-border: hsl(var(--green-h), var(--green-s), 20%);
+  --btn-hover-color: #fff;
+  --btn-hover-bg: hsl(var(--green-h), var(--green-s), 20%);
+  --btn-focus-color: var(--btn-color);
+  --btn-focus-bg: var(--green);
+  --btn-focus-hsl: var(--green-hsl);
+}
+
+:where(.btn-yellow) {
+  --btn-color: #000;
+  --btn-bg: var(--yellow);
+  --btn-border: hsl(var(--yellow-h), var(--yellow-s), 70%);
+  --btn-hover-color: var(--btn-color);
+  --btn-hover-bg: hsl(var(--yellow-h), var(--yellow-s), 70%);
+  --btn-focus-color: var(--btn-color);
+  --btn-focus-bg: var(--yellow);
+  --btn-focus-hsl: var(--yellow-hsl);
+}
