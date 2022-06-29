@@ -24,6 +24,7 @@
   @extend %svg-mask;
 }
 
+// Requires work to make flexible for varying font sizes.
 .ico-a:after { margin-left: .25rem; }
 .ico-b:before { margin-right: .25rem; }
 
@@ -34,15 +35,22 @@
 
 // Class utility icons
 
-.css3 {
---svg: var(--css3);
+.home {
+--svg: var(--home);
 }
 
-[aria-label="Top of page"] {
---svg: var(--pageup);
+.email {
+--svg: var(--email);
 }
 
-.github {
---svg: var(--github);
+.arrowup {
+--svg: var(--arrowup);
 }
 
+.newtab {
+--svg: var(--newtab);
+}
+
+.pagelink {
+--svg: var(--pagelink);
+}

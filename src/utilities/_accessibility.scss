@@ -4,6 +4,7 @@
 .mode {
   --btn-bg: transparent;
   --btn-hover-bg: var(--btn-bg);
+  --btn-focus-bg: var(--btn-bg);
   --btn-border: none;
   --svg: var(--modeswitch-svg); 
    
@@ -14,13 +15,13 @@
   &:before {  
     @extend %svg-mask;
   }
-    
+  
   &:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
     
     &:hover {
-
+      background-color: var(--btn-bg);
     }
   }
 }
