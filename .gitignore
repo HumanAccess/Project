@@ -1,6 +1,7 @@
 /site/
 /svg/
-/src/_theme.scss
+/src/theme.scss
+/src/theme/
 /src/utilities/_svg2.scss
 /src/utilities/_syntax.scss
 *.ppr
