@@ -85,7 +85,7 @@
   --link-light: hsl(240, 45%, 68%);
   --link-dark: hsl(240, 45%, 50%);
   --day-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m7.47 0v2.26h1.15v-2.26zm-4.9 2.19-0.812 0.8 1.62 1.6 0.812-0.8zm10.8 0-1.62 1.6 0.812 0.8 1.62-1.6zm-5.29 1.25s-4.59 0-4.59 4.52c0 4.52 4.59 4.52 4.59 4.52s4.59 0 4.59-4.52c0-4.52-4.59-4.52-4.59-4.52zm5.67 3.92v1.13h2.3v-1.13zm-13.7 0.0243v1.13h2.3v-1.13zm3.01 4-1.62 1.6 0.812 0.8 1.62-1.6zm9.99 0-0.812 0.8 1.62 1.6 0.812-0.8zm-5.54 2.36v2.26h1.15v-2.26z' clip-rule='evenodd'/></svg>");
-  --night-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m3.23 0.5s-6.14 6.14-3e-7 12.3c6.14 6.14 12.3 0 12.3 0s-4.54 1.45-9.15-3.16c-4.6-4.6-3.13-9.12-3.13-9.12z' clip-rule='evenodd'/></svg>");
+  --night-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m3.6 1s-2.27 2.27-2.5 5.39c-0.308 1.82 0.062 4.02 2.26 6.22 2.06 2.06 4.11 2.51 5.86 2.31 3.46-0.231 5.79-2.51 5.79-2.51s-4.21 1.35-8.48-2.93c-4.26-4.26-2.9-8.46-2.9-8.46z' clip-rule='evenodd'/></svg>");
 }
 
 :where(html) {
