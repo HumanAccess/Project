@@ -1,9 +1,8 @@
-// Icons
-
-// Import SVG icons file
+// SVG icons
 @import "svg";
 
-// SVG mask style extend
+// SVG extend
+
 %svg-mask {
 --v-align: -.125em;
 --color: var(--text);
@@ -19,6 +18,7 @@
 }
 
 // Class utility styles
+
 .ico-a:after, .ico-b:before, 
 .ico-block-a:after, .ico-block-b:before {
   @extend %svg-mask;

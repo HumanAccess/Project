@@ -79,12 +79,12 @@ $fraction-grid-variables: (
 ) !default;
 
 // Gaps
-$gap-0: 0 !default;
-$gap-1: .25rem !default;
-$gap-2: .5rem !default;
-$gap-3: 1rem !default;
-$gap-4: 1.5rem !default;
-$gap-5: 2rem !default;
+$gap-0: 0;
+$gap-1: .25rem;
+$gap-2: .5rem;
+$gap-3: 1rem;
+$gap-4: 1.5rem;
+$gap-5: 2rem;
 
 // Gap utilties map
 $gaps: (
@@ -97,12 +97,12 @@ $gaps: (
 ) !default;
 
 // Column gaps
-$gap-c-0: 0 !default;
-$gap-c-1: .25rem !default;
-$gap-c-2: .5rem !default;
-$gap-c-3: 1rem !default;
-$gap-c-4: 1.5rem !default;
-$gap-c-5: 2rem !default;
+$gap-c-0: 0;
+$gap-c-1: .25rem;
+$gap-c-2: .5rem;
+$gap-c-3: 1rem;
+$gap-c-4: 1.5rem;
+$gap-c-5: 2rem;
 
 // Column gaps utilities map
 $gap-column: (
@@ -115,12 +115,12 @@ $gap-column: (
 ) !default;
 
 // Row gaps
-$gap-r-0: 0 !default;
-$gap-r-1: .25rem !default;
-$gap-r-2: .5rem !default;
-$gap-r-3: 1rem !default;
-$gap-r-4: 1.5rem !default;
-$gap-r-5: 2rem !default;
+$gap-r-0: 0;
+$gap-r-1: .25rem;
+$gap-r-2: .5rem;
+$gap-r-3: 1rem;
+$gap-r-4: 1.5rem;
+$gap-r-5: 2rem;
 
 // Row gaps utilities map
 $gap-row: (
@@ -133,12 +133,12 @@ $gap-row: (
 ) !default;
 
 // Order
-$order-0: 0 !default;
-$order-1: 1 !default;
-$order-2: 2 !default;
-$order-3: 3 !default;
-$order-4: 4 !default;
-$order-5: 5 !default;
+$order-0: 0;
+$order-1: 1;
+$order-2: 2;
+$order-3: 3;
+$order-4: 4;
+$order-5: 5;
 
 // Order utilities map
 $order: (
@@ -151,11 +151,11 @@ $order: (
 ) !default;
 
 // Breakpoints
-$bp576: 576px !default;
-$bp768: 768px !default;
-$bp992: 992px !default;
-$bp1200: 1200px !default;
-$bp1400: 1400px !default;
+$bp576: 576px;
+$bp768: 768px;
+$bp992: 992px;
+$bp1200: 1200px;
+$bp1400: 1400px;
 
 // Breakpoints utilities map
 $breakpoints: (

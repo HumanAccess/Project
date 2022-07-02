@@ -1,12 +1,8 @@
-// Basic SVGs icons for common theme elements.
-// See /utilities/_icons.scss for icon implementation styles.
-// The SVGs are provided as Sass variables to allow overriding them in 
-// custom variables files if required. 
-
+// SVG
 // The sun and moon SVG icons used for the manual light/dark mode button
-// are included in /variables/_color-schemes.scss, the styles for the
-// button provided within /utilities/_accessibility.scss.
+// are included in /variables/_color-schemes.scss
 
+// Basic icons for common theme elements.
 $home: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m1 15v-7l7-7 3 3v-2h2v4l2 2v7h-5v-5h-4v5z' clip-rule='evenodd'/></svg>");
 $email: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m1 2 7 8 7-8h-14zm14 0.959-4.47 5.33 4.47 5.67v-11zm-14 0.041v11l4.47-5.67-4.47-5.33zm5 6-5 6h14l-5-6-2 2-2-2z' clip-rule='evenodd'/></svg>");
 $arrowup: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m8.88 1.88-0.875-0.875-7 6.12v1.75l6.12-5.25v11.4h1.75v-11.4l6.12 5.25v-1.75z' clip-rule='evenodd'/></svg>");
