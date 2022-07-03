@@ -1,6 +1,4 @@
 /site/
-/static/
-/layouts/
 /svg/
 /src/utilities/_svg2.scss
 /src/utilities/_syntax.scss
