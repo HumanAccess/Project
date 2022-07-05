@@ -4,10 +4,12 @@
 // switching and @media prefers options. The properties are managed
 // using Sass variables to save replicating alterations made.
 
+// Sass variables
+
 // Links
-$link-lighter: 240, 45%, 75%;
-$link-light: 240, 45%, 68%;
-$link-dark: 240, 45%, 50%;
+$link-lighter: 240, 45%, 75% !default;
+$link-light: 240, 45%, 68% !default;
+$link-dark: 240, 45%, 50% !default;
 
 // Mode switching button SVGs
 $day-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='m7.47 0v2.26h1.15v-2.26zm-4.9 2.19-0.812 0.8 1.62 1.6 0.812-0.8zm10.8 0-1.62 1.6 0.812 0.8 1.62-1.6zm-5.29 1.25s-4.59 0-4.59 4.52c0 4.52 4.59 4.52 4.59 4.52s4.59 0 4.59-4.52c0-4.52-4.59-4.52-4.59-4.52zm5.67 3.92v1.13h2.3v-1.13zm-13.7 0.0243v1.13h2.3v-1.13zm3.01 4-1.62 1.6 0.812 0.8 1.62-1.6zm9.99 0-0.812 0.8 1.62 1.6 0.812-0.8zm-5.54 2.36v2.26h1.15v-2.26z' clip-rule='evenodd'/></svg>");
@@ -15,38 +17,39 @@ $night-mode: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor
 
 // Light mode color scheme
 $lm-color-scheme: light;
-$lm-text: #000;
-$lm-text-hsl: 0, 0%, 0%;
-$lm-text-light: var(--gray-9);
-$lm-link: var(--link-dark);
-$lm-link-hover: var(--link-lighter);
-$lm-surf-1: #fff;
-$lm-surf-2: var(--gray-1);
-$lm-surf-3: var(--gray-2);
-$lm-surf-4: var(--gray-3);
-$lm-surf-5: var(--gray-4);
-$lm-surf-6: var(--gray-5);
-$lm-surf-7: var(--gray-6);
-$lm-body-bg: var(--surf-1);
-$lm-modeswitch-svg: var(--day-mode);
+$lm-text: #000 !default;
+$lm-text-hsl: 0, 0%, 0% !default;
+$lm-text-light: var(--gray-9) !default;
+$lm-link: var(--link-dark) !default;
+$lm-link-hover: var(--link-lighter) !default;
+$lm-surf-1: #fff !default;
+$lm-surf-2: var(--gray-1) !default;
+$lm-surf-3: var(--gray-2) !default;
+$lm-surf-4: var(--gray-3) !default;
+$lm-surf-5: var(--gray-4) !default;
+$lm-surf-6: var(--gray-5) !default;
+$lm-surf-7: var(--gray-6) !default;
+$lm-body-bg: var(--surf-1) !default;
+$lm-modeswitch-svg: var(--day-mode) !default;
 
 // Dark mode color scheme
 $dm-color-scheme: dark;
-$dm-text: #fff;
-$dm-text-hsl: 0, 0%, 100%;
-$dm-text-light: var(--gray-2);
-$dm-link: var(--link-light);
-$dm-link-hover: var(--link-lighter);
-$dm-surf-1: #000;
-$dm-surf-2: var(--gray-12);
-$dm-surf-3: var(--gray-11);
-$dm-surf-4: var(--gray-10);
-$dm-surf-5: var(--gray-9);
-$dm-surf-6: var(--gray-8);
-$dm-surf-7: var(--gray-7);
-$dm-body-bg: var(--surf-1);
-$dm-modeswitch-svg: var(--night-mode);
+$dm-text: #fff !default;
+$dm-text-hsl: 0, 0%, 100% !default;
+$dm-text-light: var(--gray-2) !default;
+$dm-link: var(--link-light) !default;
+$dm-link-hover: var(--link-lighter) !default;
+$dm-surf-1: #000 !default;
+$dm-surf-2: var(--gray-12) !default;
+$dm-surf-3: var(--gray-11) !default;
+$dm-surf-4: var(--gray-10) !default;
+$dm-surf-5: var(--gray-9) !default;
+$dm-surf-6: var(--gray-8) !default;
+$dm-surf-7: var(--gray-7) !default;
+$dm-body-bg: var(--surf-1) !default;
+$dm-modeswitch-svg: var(--night-mode) !default;
 
+// CSS variables
 
 :root {
   color-scheme: light dark;

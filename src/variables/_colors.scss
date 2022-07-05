@@ -1,24 +1,39 @@
 // Colors
 
+// Sass variables
+$blue-h: 240 !default;
+$blue-s: 45% !default;
+$blue-l: 50% !default;
+$red-h: 0 !default;
+$red-s: 100% !default;
+$red-l: 35% !default;
+$green-h: 120 !default;
+$green-s: 50% !default;
+$green-l: 30% !default;
+$yellow-h: 60 !default;
+$yellow-s: 100% !default;
+$yellow-l: 57% !default;
+
+// CSS variables
 :where(html) {
-  --blue-h: 240;
-  --blue-s: 45%;
-  --blue-l: 50%;
-  --blue-hsl: 240, 45%, 50%;
+  --blue-h: #{$blue-h};
+  --blue-s: #{$blue-s};
+  --blue-l: #{$blue-l};
+  --blue-hsl: #{$blue-h}, #{$blue-s}, #{$blue-l};
   --blue: hsl(var(--blue-hsl));   
-  --red-h: 0;
-  --red-s: 100%;
-  --red-l: 35%;
-  --red-hsl: 0, 100%, 35%;
+  --red-h: #{$red-h};
+  --red-s: #{$red-s};
+  --red-l: #{$red-l};
+  --red-hsl: #{$red-h}, #{$red-s}, #{$red-l};
   --red: hsl(var(--red-hsl));    
-  --green-h: 120;
-  --green-s: 50%;
-  --green-l: 30%;
-  --green-hsl: 120, 50%, 30%;
+  --green-h: #{$green-h};
+  --green-s: #{$green-s};
+  --green-l: #{$green-l};
+  --green-hsl: #{$green-h}, #{$green-s}, #{$green-l};
   --green: hsl(var(--green-hsl));    
-  --yellow-h: 60;
-  --yellow-s: 100%;
-  --yellow-l: 57%;
-  --yellow-hsl: 60, 100%, 57%;
+  --yellow-h: #{$yellow-h};
+  --yellow-s: #{$yellow-s};
+  --yellow-l: #{$yellow-l};
+  --yellow-hsl: #{$yellow-h}, #{$yellow-s}, #{$yellow-l};
   --yellow: hsl(var(--yellow-hsl));
 }
