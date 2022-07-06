@@ -4,36 +4,41 @@
 $blue-h: 240 !default;
 $blue-s: 45% !default;
 $blue-l: 50% !default;
+$blue: $blue-h, $blue-s, $blue-l !default;
 $red-h: 0 !default;
 $red-s: 100% !default;
 $red-l: 35% !default;
+$red: $red-h, $red-s, $red-l !default;
 $green-h: 120 !default;
 $green-s: 50% !default;
 $green-l: 30% !default;
+$green: $green-h, $green-s, $green-l !default;
 $yellow-h: 60 !default;
 $yellow-s: 100% !default;
 $yellow-l: 57% !default;
+$yellow: $yellow-h, $yellow-s, $yellow-l !default;
+
 
 // CSS variables
 :where(html) {
   --blue-h: #{$blue-h};
   --blue-s: #{$blue-s};
   --blue-l: #{$blue-l};
-  --blue-hsl: #{$blue-h}, #{$blue-s}, #{$blue-l};
-  --blue: hsl(var(--blue-hsl));   
+  --blue-hsl: #{$blue};
+  --blue: hsl(#{$blue});   
   --red-h: #{$red-h};
   --red-s: #{$red-s};
   --red-l: #{$red-l};
-  --red-hsl: #{$red-h}, #{$red-s}, #{$red-l};
-  --red: hsl(var(--red-hsl));    
+  --red-hsl: #{$red};
+  --red: hsl(#{$red});    
   --green-h: #{$green-h};
   --green-s: #{$green-s};
   --green-l: #{$green-l};
-  --green-hsl: #{$green-h}, #{$green-s}, #{$green-l};
-  --green: hsl(var(--green-hsl));    
+  --green-hsl: #{$green};
+  --green: hsl(#{$green});    
   --yellow-h: #{$yellow-h};
   --yellow-s: #{$yellow-s};
   --yellow-l: #{$yellow-l};
-  --yellow-hsl: #{$yellow-h}, #{$yellow-s}, #{$yellow-l};
-  --yellow: hsl(var(--yellow-hsl));
+  --yellow-hsl: #{$yellow};
+  --yellow: hsl(#{$yellow});
 }
