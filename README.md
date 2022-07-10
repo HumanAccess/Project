@@ -6,27 +6,7 @@ Author: "Phil Brown"
 Email: "phil@humanaccess.com.au"
 ---
 
-# Project
+# Update
 
-Simple CSS variables and baseline property styles designed to be used as starter CSS for website design. Includes the assets for the Libre Franklin font family used, and styles and JS for a manual color scheme switching button.
+This was compiled using Node-Sass which required the workarounds for HSL and clamp values. I've rebuilt it using Dart-Sass at [Project Theme](https://github.com/HumanAccess/Project-theme) and slightly restructured it to make it more practical to use for theme design, I'll be working on it there from now on.
 
-*Variables*
-
-- Font families and sizes
-- Mono and primary colors
-- Light/dark color schemes
-- Gradients and shadows
-
-*Styles*
-
-- HTML and body
-- Typography
-- Forms and buttons
-- Tables
-
-*Utilities*
- 
-- Mini CSS grid
-- SVG icons
-- Custom buttons
-- Text and spacing
